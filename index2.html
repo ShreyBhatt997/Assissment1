@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+    <style>
+        #bod{
+            background-color: #da4352; 
+
+        }
+        #new{
+            background-color: #f4f4f4;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            width: 350px;
+            margin: 0 auto;    
+            
+        }
+
+        h1{
+            text-align: center;
+        }
+        label{
+            font-weight: bold;
+        }
+        button{
+            display: block;       
+            margin: 0 auto;      
+            padding: 10px 20px;  
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="password"],
+        input[type="url"],
+        input[type="number"],
+        select{
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box; 
+        }
+        textarea{
+            width: 100%; 
+            padding: 10px; 
+            border: 1px solid #ccc; 
+            border-radius: 5px; 
+            box-sizing: border-box;
+        }
+
+    </style>
+</head>
+<body id="bod">
+    <h1>Feedback Form</h1>
+    <div id="new">
+        
+    <form action="">
+        <label for="feedback">Feedback Type</label>
+        <br>
+        <select name="feedback" id="feedbach">
+            <option value="general">general</option>
+            <option value="bugs">Report a bug</option>
+            <option value="suggestions">suggestion</option>
+
+        </select>
+        <br>
+        <br>
+        <label for="message">message</label>
+        <br>
+        <textarea placeholder="enter the message"></textarea>
+        <br><br>
+        <label>Website Rating:</label>
+        <input type="radio" id="rating1" name="rating" value="1"> <label for="rating1">1</label>
+        <input type="radio" id="rating2" name="rating" value="2"> <label for="rating2">2</label>
+        <input type="radio" id="rating3" name="rating" value="3"> <label for="rating3">3</label>
+        <input type="radio" id="rating4" name="rating" value="4"> <label for="rating4">4</label>
+        <input type="radio" id="rating5" name="rating" value="5"> <label for="rating5">5</label>
+        <br><br>
+        <label for="age">Your Age:</label>
+        <br>
+        <input type="Number" min="10" max="100">
+        <br><br>
+        <label for="email">Email (required):</label>
+        <input type="email" placeholder="enter the email" required>
+        <br><br>
+        <label for="password">password(minimun length 8)</label>
+        <input type="password" placeholder="enter password" min="8">
+        <br><br>
+        <label for="url">url:</label>
+        <br>
+        <input type="url" placeholder="enter the url">
+        <br><br>
+        <label for="trems and condistions">terms and condistion</label>
+        <input type="checkbox">
+        <br><br>
+        <button type="submit">submit</button>
+    </form>
+
+    </div>
+   
+    
+</body>
+</html>
